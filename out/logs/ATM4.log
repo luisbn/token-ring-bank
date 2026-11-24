@@ -1,0 +1,42 @@
+[16:04:18.828] [ATM4] AVVIO              | ATM4 in ascolto sulla porta 5004 | successore: ATM1 (porta 5001)
+[16:04:26.476] [ATM4] TOKEN RICEVUTO     | da ATM3 | seq=3 | saldo=1000
+[16:04:26.478] [ATM4] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:04:30.509] [ATM4] TOKEN INOLTRATO    | a ATM1 | seq=4 | saldo=1000
+[16:04:42.547] [ATM4] TOKEN RICEVUTO     | da ATM3 | seq=7 | saldo=1000
+[16:04:42.547] [ATM4] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:04:46.553] [ATM4] TOKEN INOLTRATO    | a ATM1 | seq=8 | saldo=1000
+[16:04:58.626] [ATM4] TOKEN RICEVUTO     | da ATM3 | seq=11 | saldo=1000
+[16:04:58.626] [ATM4] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:05:02.636] [ATM4] TOKEN INOLTRATO    | a ATM1 | seq=12 | saldo=1000
+[16:05:15.732] [ATM4] TOKEN RICEVUTO     | da ATM3 | seq=15 | saldo=800
+[16:05:15.732] [ATM4] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:05:19.737] [ATM4] TOKEN INOLTRATO    | a ATM1 | seq=16 | saldo=800
+[16:05:31.781] [ATM4] TOKEN RICEVUTO     | da ATM3 | seq=19 | saldo=800
+[16:05:31.781] [ATM4] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:05:35.786] [ATM4] TOKEN INOLTRATO    | a ATM1 | seq=20 | saldo=800
+[16:05:48.868] [ATM4] TOKEN RICEVUTO     | da ATM3 | seq=23 | saldo=900
+[16:05:48.870] [ATM4] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:05:52.883] [ATM4] TOKEN INOLTRATO    | a ATM1 | seq=24 | saldo=900
+[16:05:57.257] [ATM4] RICHIESTA          | PRELIEVO 500 accodata, in attesa del token
+[16:06:04.921] [ATM4] TOKEN RICEVUTO     | da ATM3 | seq=27 | saldo=900
+[16:06:04.928] [ATM4] >>> INIZIO TX      | T4.1 PRELIEVO 500  [ENTRATA IN SEZIONE CRITICA]
+[16:06:04.933] [ATM4]    1-LETTURA       | saldo corrente = 900
+[16:06:04.933] [ATM4]    2-VALIDAZIONE   | OK
+[16:06:05.946] [ATM4]    3-AGGIORNAMENTO | 900 - 500 = 400
+[16:06:05.946] [ATM4]    4-SCRITTURA     | nuovo saldo scritto nel token
+[16:06:05.956] [ATM4]    5-REGISTRAZIONE | operazione registrata in logs/registro_ATM4.txt
+[16:06:05.956] [ATM4] <<< FINE TX        | T4.1 COMPLETATA  [USCITA DALLA SEZIONE CRITICA]
+[16:06:05.956] [ATM4] SALDO AGGIORNATO   | 400
+[16:06:09.973] [ATM4] TOKEN INOLTRATO    | a ATM1 | seq=28 | saldo=400
+[16:06:22.020] [ATM4] TOKEN RICEVUTO     | da ATM3 | seq=31 | saldo=400
+[16:06:22.020] [ATM4] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:06:26.031] [ATM4] TOKEN INOLTRATO    | a ATM1 | seq=32 | saldo=400
+[16:06:37.056] [ATM4] RICHIESTA          | PRELIEVO 800 accodata, in attesa del token
+[16:06:38.061] [ATM4] TOKEN RICEVUTO     | da ATM3 | seq=35 | saldo=400
+[16:06:38.061] [ATM4] >>> INIZIO TX      | T4.2 PRELIEVO 800  [ENTRATA IN SEZIONE CRITICA]
+[16:06:38.061] [ATM4]    1-LETTURA       | saldo corrente = 400
+[16:06:38.061] [ATM4]    2-VALIDAZIONE   | RIFIUTATA: fondi insufficienti (richiesti 800, disponibili 400)
+[16:06:39.074] [ATM4]    5-REGISTRAZIONE | operazione registrata in logs/registro_ATM4.txt
+[16:06:39.080] [ATM4] <<< FINE TX        | T4.2 ANNULLATA  [USCITA DALLA SEZIONE CRITICA]
+[16:06:39.080] [ATM4] SALDO AGGIORNATO   | 400
+[16:06:43.089] [ATM4] TOKEN INOLTRATO    | a ATM1 | seq=36 | saldo=400

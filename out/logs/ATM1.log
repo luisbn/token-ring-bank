@@ -1,0 +1,32 @@
+[16:04:14.346] [ATM1] AVVIO              | ATM1 in ascolto sulla porta 5001 | successore: ATM2 (porta 5002)
+[16:04:14.346] [ATM1] TOKEN              | ATM1 crea l'UNICO token del sistema (saldo iniziale 1000)
+[16:04:14.370] [ATM1] TOKEN RICEVUTO     | (token iniziale) | seq=0 | saldo=1000
+[16:04:14.370] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:04:18.396] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=1 | saldo=1000
+[16:04:30.509] [ATM1] TOKEN RICEVUTO     | da ATM4 | seq=4 | saldo=1000
+[16:04:30.509] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:04:34.515] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=5 | saldo=1000
+[16:04:46.556] [ATM1] TOKEN RICEVUTO     | da ATM4 | seq=8 | saldo=1000
+[16:04:46.556] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:04:50.574] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=9 | saldo=1000
+[16:05:02.636] [ATM1] TOKEN RICEVUTO     | da ATM4 | seq=12 | saldo=1000
+[16:05:02.636] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:05:06.642] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=13 | saldo=1000
+[16:05:19.737] [ATM1] TOKEN RICEVUTO     | da ATM4 | seq=16 | saldo=800
+[16:05:19.737] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:05:23.743] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=17 | saldo=800
+[16:05:35.786] [ATM1] TOKEN RICEVUTO     | da ATM4 | seq=20 | saldo=800
+[16:05:35.786] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:05:39.794] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=21 | saldo=800
+[16:05:52.885] [ATM1] TOKEN RICEVUTO     | da ATM4 | seq=24 | saldo=900
+[16:05:52.885] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:05:56.888] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=25 | saldo=900
+[16:06:09.975] [ATM1] TOKEN RICEVUTO     | da ATM4 | seq=28 | saldo=400
+[16:06:09.975] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:06:13.980] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=29 | saldo=400
+[16:06:26.033] [ATM1] TOKEN RICEVUTO     | da ATM4 | seq=32 | saldo=400
+[16:06:26.035] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:06:30.049] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=33 | saldo=400
+[16:06:43.089] [ATM1] TOKEN RICEVUTO     | da ATM4 | seq=36 | saldo=400
+[16:06:43.095] [ATM1] NESSUNA TX         | nessuna transazione da eseguire, inoltro il token
+[16:06:47.105] [ATM1] TOKEN INOLTRATO    | a ATM2 | seq=37 | saldo=400
